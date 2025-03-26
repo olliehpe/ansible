@@ -4,7 +4,6 @@
     file_to_touch: "test.txt"
   tasks:
     - name: Creating an empty file
-      become: yes
-      file:
+      ansible.builtin.file:
         path: {{file_to_touch}}
         state: touch
