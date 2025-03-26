@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+    file_to_touch: "test.txt"
+  tasks:
+    - name: Creating an empty file
+      become: yes
+      file:
+        path: "test.txt"
+        state: touch
