@@ -6,5 +6,5 @@
     - name: Creating an empty file
       become: yes
       file:
-        path: "test.txt"
+        path: {{file_to_touch}}
         state: touch
