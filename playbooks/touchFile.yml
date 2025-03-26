@@ -5,5 +5,5 @@
   tasks:
     - name: Creating an empty file
       ansible.builtin.file:
-        path: {{file_to_touch}}
+        path: "{{file_to_touch}}"
         state: touch
