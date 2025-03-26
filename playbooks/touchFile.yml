@@ -1,9 +1,9 @@
 ---
 - hosts: all
   vars:
-    file_to_touch: "test.txt"
+    file_to_touch: "test2.txt"
   tasks:
     - name: Creating an empty file
-      ansible.builtin.file:
+      file:
         path: "{{file_to_touch}}"
         state: touch
